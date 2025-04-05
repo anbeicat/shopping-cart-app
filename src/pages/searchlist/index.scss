@@ -1,0 +1,22 @@
+.header {
+    padding-top: 2px;
+    box-shadow: none;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    .adm-tab-bar-item-active {
+        color: #ff5500;
+    }
+}

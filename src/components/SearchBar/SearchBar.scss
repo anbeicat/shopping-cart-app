@@ -1,0 +1,24 @@
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border-radius: 999px;
+    border: 2px solid #111;
+    margin: 10px 12px 0;
+
+    .search {
+        // border: 1px solid #ff5000;
+        // border-radius: 10px;
+        --font-size: 14px;
+        margin-left: 10px;
+
+    }
+
+    .searchbtn {
+        background: #111;
+        border-radius: 999px;
+        margin-left: 6px;
+    }
+
+}
