@@ -2,9 +2,9 @@
  * @Author: anqiao anqiao10@gmail.com
  * @Date: 2025-04-04 12:02:41
  * @LastEditors: anqiao anqiao10@gmail.com
- * @LastEditTime: 2025-04-05 19:23:11
+ * @LastEditTime: 2025-04-06 00:55:30
  * @description: 
- * @FilePath: /shopping-cart-app/src/pages/Homehooks.ts
+ * @FilePath: /shopping-cart-app/src/pages/Home/Homehooks.ts
  */
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';

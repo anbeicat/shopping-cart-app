@@ -2,7 +2,7 @@
  * @Author: anqiao anqiao10@gmail.com
  * @Date: 2025-03-31 14:37:44
  * @LastEditors: anqiao anqiao10@gmail.com
- * @LastEditTime: 2025-04-05 22:16:12
+ * @LastEditTime: 2025-04-06 00:56:49
  * @description: 
  * @FilePath: /shopping-cart-app/src/pages/Home/Home.tsx
  */
@@ -216,7 +216,7 @@ export default () => {
                     {/* 使用封装的 SearchBar */}
                     <SearchBar
                         placeholder="찾고 싶은 상품을 검색해 보세요"
-                        // onSearchChange={$.handleSearchChange}
+                        onSearchChange={$.handleSearchChange}
                         // onSearchClick={handleSearchClick}
                         showCameraIcon={!$.showSearchBar}
                     />

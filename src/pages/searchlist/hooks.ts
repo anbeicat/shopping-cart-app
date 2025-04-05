@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 export const useHooks = () => {
     const [activeTab, setActiveTab] = useState('home');
     const [activeBannerTab, setActiveBannerTab] = useState('recommend');
