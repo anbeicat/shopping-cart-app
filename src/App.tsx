@@ -2,7 +2,7 @@
  * @Author: anqiao anqiao10@gmail.com
  * @Date: 2025-03-31 13:29:58
  * @LastEditors: anqiao anqiao10@gmail.com
- * @LastEditTime: 2025-04-05 21:38:55
+ * @LastEditTime: 2025-04-07 14:00:06
  * @description: 
  * @FilePath: /shopping-cart-app/src/App.tsx
  */
@@ -12,8 +12,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Home from './pages/Home/Home';
 import SearchList from './pages/searchlist/index';
-// import Cart from './pages/Cart/Cart';
-// import My from './pages/My/My';
+import Cart from './pages/Cart/index';
+import My from './pages/My/index';
 import './App.css'
 function App() {
 
@@ -24,8 +24,8 @@ function App() {
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/searchlist" element={<SearchList />} />
-          {/* <Route path="/cart" element={<Cart />} />
-            <Route path="/my" element={<My />} /> */}
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/my" element={<My />} />
         </Routes>
       </div>
     </>
