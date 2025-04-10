@@ -1,20 +1,25 @@
+/*
+ * @Author: anqiao anqiao10@gmail.com
+ * @Date: 2025-04-05 21:05:09
+ * @LastEditors: anqiao anqiao10@gmail.com
+ * @LastEditTime: 2025-04-10 17:02:31
+ * @description: 
+ * @FilePath: /shopping-cart-app/src/pages/searchlist/hooks.ts
+ */
 import React, { useState, useEffect } from 'react';
 
 export const useHooks = () => {
-    const [activeTab, setActiveTab] = useState('home');
-    const [activeBannerTab, setActiveBannerTab] = useState('recommend');
+    const [activeKey, setActiveKey] = useState('beauty');
     const [searchValue, setSearchValue] = useState('');
     const [showSearchBar, setShowSearchBar] = useState(false);
 
-    const handleTabChange = (key: string) => {
+    const handleKeyChange = (key: string) => {
         console.log('当前选中的tab:', key);
 
-        setActiveTab(key);
+        setActiveKey(key);
     };
 
-    const handleBannerTabChange = (key: string) => {
-        setActiveBannerTab(key);
-    };
+
 
 
     const handleSearchSubmit = () => {
@@ -26,12 +31,10 @@ export const useHooks = () => {
         setShowSearchBar(!!val)
     };
     return {
-        activeTab,
-        activeBannerTab,
+        activeKey,
         searchValue,
         showSearchBar,
-        handleTabChange,
-        handleBannerTabChange,
+        handleKeyChange,
         handleSearchChange,
         handleSearchSubmit,
         setShowSearchBar,

@@ -2,7 +2,7 @@
  * @Author: anqiao anqiao10@gmail.com
  * @Date: 2025-03-31 14:37:44
  * @LastEditors: anqiao anqiao10@gmail.com
- * @LastEditTime: 2025-04-06 00:56:49
+ * @LastEditTime: 2025-04-10 16:34:51
  * @description: 
  * @FilePath: /shopping-cart-app/src/pages/Home/Home.tsx
  */
@@ -69,19 +69,27 @@ const bannertabs = [
 const swipertabs = [
     {
         key: '1',
-        img: '/src/assets/images/banner1.png',
+        img: '/src/assets/images/banner1.avif',
     },
     {
         key: '2',
-        img: '/src/assets/images/banner2.png',
+        img: '/src/assets/images/banner2.avif',
     },
     {
         key: '3',
-        img: '/src/assets/images/banner3.png',
+        img: '/src/assets/images/banner3.avif',
     },
     {
         key: '4',
-        img: '/src/assets/images/banner4.png',
+        img: '/src/assets/images/banner4.avif',
+    },
+    {
+        key: '5',
+        img: '/src/assets/images/banner5.avif',
+    },
+    {
+        key: '6',
+        img: '/src/assets/images/banner6.gif',
     },
 ]
 
@@ -102,7 +110,7 @@ const productlist = [
         price: '₩100,000',
         details: '10,000+ 판매',
         evaluate: '5일 배송',
-        img: '/src/assets/images/product1.png'
+        img: '/src/assets/images/product1.avif'
     },
     {
         key: '2',
@@ -117,7 +125,7 @@ const productlist = [
         price: '₩60,000',
         details: '10,000+ 판매',
         evaluate: '인기삼품',
-        img: '/src/assets/images/product4.png'
+        img: '/src/assets/images/product2.avif'
     },
     {
         key: '3',
@@ -129,7 +137,7 @@ const productlist = [
         price: '₩49,000',
         details: '100+ 판매',
         evaluate: '인기삼품',
-        img: '/src/assets/images/product1.png'
+        img: '/src/assets/images/product3.avif'
 
     },
     {
@@ -139,7 +147,7 @@ const productlist = [
         price: '₩100,000',
         details: '10,000+ 판매',
         evaluate: '인기삼품',
-        img: '/src/assets/images/product2.jpeg'
+        img: '/src/assets/images/product4.avif'
 
     },
     {
@@ -152,7 +160,7 @@ const productlist = [
         price: '₩49,000',
         details: '100+ 판매',
         evaluate: '인기삼품',
-        img: '/src/assets/images/product1.png'
+        img: '/src/assets/images/product5.avif'
 
     },
     {
@@ -165,7 +173,7 @@ const productlist = [
         price: '₩49,000',
         details: '100+ 판매',
         evaluate: '인기삼품',
-        img: '/src/assets/images/product2.jpeg'
+        img: '/src/assets/images/product6.avif'
 
     },
     {
@@ -184,7 +192,7 @@ const productlist = [
         price: '₩100,000',
         details: '10,000+ 판매',
         evaluate: '인기삼품',
-        img: '/src/assets/images/product1.png'
+        img: '/src/assets/images/product1.avif'
 
     },
     {
@@ -200,7 +208,7 @@ const productlist = [
         price: '₩60,000',
         details: '10,000+ 판매',
         evaluate: '인기삼품',
-        img: '/src/assets/images/product2.jpeg'
+        img: '/src/assets/images/product2.avif'
 
     },
 ]
@@ -248,7 +256,7 @@ export default () => {
                 <div className='productlist'>
                     {productlist.map(item => (
                         <div className='product' key={item.key}>
-                            <Image className='img' lazy src={item.img} width="100%" height={80} fit='cover' />
+                            <Image className='img' lazy src={item.img} fit='contain' />
                             <div className='title'>
                                 {item.tag.map(tag => (
                                     <Tag className='tag' color={tag.color} key={tag.text}>{tag.text}</Tag>

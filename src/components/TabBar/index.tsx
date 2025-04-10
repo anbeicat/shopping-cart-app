@@ -1,3 +1,11 @@
+/*
+ * @Author: anqiao anqiao10@gmail.com
+ * @Date: 2025-04-05 21:43:19
+ * @LastEditors: anqiao anqiao10@gmail.com
+ * @LastEditTime: 2025-04-10 15:31:21
+ * @description: 
+ * @FilePath: /shopping-cart-app/src/components/TabBar/index.tsx
+ */
 import React, { useState, useEffect } from 'react';
 import { TabBar } from 'antd-mobile';
 import { useNavigate } from 'react-router-dom';
@@ -27,7 +35,7 @@ const defaultTabs: TabBarItem[] = [
     },
     {
         key: 'searchlist',
-        title: '쇼핑',
+        title: '카테고리',
         icon: (active: boolean) => {
             return <IconFont name="searchlist" color={active ? '#ff5000' : ''} />;
         },

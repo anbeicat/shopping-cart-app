@@ -7,7 +7,28 @@
     margin-top: 50px;
     height: 100%;
     margin-bottom: 50px;
+    display: flex;
 
+    .imgbox {
+        width: 100%;
+        // display: flex;
+        // padding: 0 16px;
+        // flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0px, 1fr));
+        justify-items: center;
+        gap: 12px 4px;
+        padding: 16px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #000000;
+        }
+    }
 }
 
 .footer {

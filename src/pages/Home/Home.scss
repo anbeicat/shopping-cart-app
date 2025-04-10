@@ -70,7 +70,7 @@
         flex-direction: column;
         // justify-content: center;
         // align-items: center;
-        width: calc(50% - 8px);
+        width: calc(50% - 16px);
         margin-top: 10px;
 
         .img {
@@ -95,6 +95,13 @@
             display: flex;
             align-items: center;
             padding: 2px 0;
+            display: -webkit-box;
+            /* 必须的属性 */
+            -webkit-line-clamp: 1;
+            /* 显示几行，2 就是最多显示2行 */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
             .price {
                 font-size: 14px;
