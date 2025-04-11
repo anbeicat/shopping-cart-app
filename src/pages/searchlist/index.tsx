@@ -206,7 +206,7 @@ export default () => {
     ];
     return (
         <>
-            <div>
+            <div className='searchlist'>
                 {/* searchbar */}
                 <div className='header'>
                     <SearchBar

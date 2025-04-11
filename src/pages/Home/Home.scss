@@ -2,140 +2,140 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
 
-.header {
-    position: fixed;
-    // position: sticky;
-    top: 0px;
-    right: 0;
-    left: 0;
-    padding-top: 2px;
-    z-index: 1000;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.searchbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-    border-radius: 999px;
-    border: 2px solid #111;
-    margin: 10px 12px 0;
-
-    .search {
-        // border: 1px solid #ff5000;
-        // border-radius: 10px;
-        --font-size: 14px;
-        margin-left: 10px;
-
+    .header {
+        position: fixed;
+        // position: sticky;
+        top: 0px;
+        right: 0;
+        left: 0;
+        padding-top: 2px;
+        z-index: 1000;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .searchbtn {
-        background: #111;
-        border-radius: 999px;
-        margin-left: 6px;
-    }
-
-}
-
-.tabs {
-    .adm-tabs-header {
-        border: 0;
-    }
-}
-
-.banner {
-    margin: 88px 12px 0 12px;
-
-    .adm-swiper {
-        border-radius: 10px;
-    }
-
-}
-
-.productlist {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 60px;
-    // padding: 6px;
-
-    .product {
-        // padding-right: 6px;
+    .searchbar {
         display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        width: calc(50% - 16px);
-        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        border-radius: 999px;
+        border: 2px solid #111;
+        margin: 10px 12px 0;
 
-        .img {
-            width: 100%;
-            height: 100%;
+        .search {
+            // border: 1px solid #ff5000;
+            // border-radius: 10px;
+            --font-size: 14px;
+            margin-left: 10px;
+
+        }
+
+        .searchbtn {
+            background: #111;
+            border-radius: 999px;
+            margin-left: 6px;
+        }
+
+    }
+
+    .tabs {
+        .adm-tabs-header {
+            border: 0;
+        }
+    }
+
+    .banner {
+        margin: 88px 12px 0 12px;
+
+        .adm-swiper {
             border-radius: 10px;
-            // object-fit: contain;
         }
 
-        .title {
+    }
+
+    .productlist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 60px;
+        // padding: 6px;
+
+        .product {
+            // padding-right: 6px;
             display: flex;
+            flex-direction: column;
             // justify-content: center;
-            align-items: center;
-            padding: 2px 0;
+            // align-items: center;
+            width: calc(50% - 16px);
+            margin-top: 10px;
 
-            .tag {
-                margin-right: 2px;
-            }
-        }
-
-        .pricedetails {
-            display: flex;
-            align-items: center;
-            padding: 2px 0;
-            display: -webkit-box;
-            /* 必须的属性 */
-            -webkit-line-clamp: 1;
-            /* 显示几行，2 就是最多显示2行 */
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-            .price {
-                font-size: 14px;
-                padding-right: 2px;
+            .img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                // object-fit: contain;
             }
 
-            .details {
+            .title {
+                display: flex;
+                // justify-content: center;
+                align-items: center;
+                padding: 2px 0;
+
+                .tag {
+                    margin-right: 2px;
+                }
+            }
+
+            .pricedetails {
+                display: flex;
+                align-items: center;
+                padding: 2px 0;
+                display: -webkit-box;
+                /* 必须的属性 */
+                -webkit-line-clamp: 1;
+                /* 显示几行，2 就是最多显示2行 */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                .price {
+                    font-size: 14px;
+                    padding-right: 2px;
+                }
+
+                .details {
+                    font-size: 12px;
+                    color: #b3b1b1;
+                    padding: 0 1px;
+                }
+            }
+
+            .evaluate {
+                color: #f44f2a;
                 font-size: 12px;
-                color: #b3b1b1;
-                padding: 0 1px;
             }
         }
 
-        .evaluate {
-            color: #f44f2a;
-            font-size: 12px;
+        >.product:nth-child(2n) {
+            // margin-left: 6px;
         }
     }
 
-    >.product:nth-child(2n) {
-        // margin-left: 6px;
-    }
-}
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-    .adm-tab-bar-item-active {
-        color: #ff5500;
+        .adm-tab-bar-item-active {
+            color: #ff5500;
+        }
     }
 }

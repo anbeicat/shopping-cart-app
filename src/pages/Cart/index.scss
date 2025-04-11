@@ -1,29 +1,29 @@
-.cart {}
+.cart {
+    .header {
+        margin: 10px 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-.header {
-    margin: 10px 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .header-right {
-        span {
-            margin-right: 10px;
-            font-size: 14px;
+        .header-right {
+            span {
+                margin-right: 10px;
+                font-size: 14px;
+            }
         }
     }
-}
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
-    .adm-tab-bar-item-active {
-        color: #ff5500;
+        .adm-tab-bar-item-active {
+            color: #ff5500;
+        }
     }
 }
